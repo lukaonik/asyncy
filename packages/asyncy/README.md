@@ -2,15 +2,15 @@
 
 Are you tired of null checks with `async` pipe ? use `asyncy`
 
-# what is asyncy
+# What is asyncy
 
 `asyncy` pipe is a wrapper around `async` pipe, with small addition. it returns `T` type instead of `T | null` . So it avoids `*ngIf` checks when you need to use it in template or pass async data in children components
 
-# getting started
+# Getting started
 
 `async` pipe is standalone, so in order to use it, you need to import it inside component or in module.
 
-## module
+## Module
 
 ```  
 @NgModule({
@@ -21,7 +21,7 @@ Are you tired of null checks with `async` pipe ? use `asyncy`
   export class SomeModule{}
   ```
 
-## component
+## Component
 
 ```  
 @Component({
@@ -30,12 +30,12 @@ Are you tired of null checks with `async` pipe ? use `asyncy`
   })
 ```
 
-# usage
+# Usage
 
 it has the same usage as `async` pipe
 `<h1> {{someAsyncData$ | asyncy}} </h1>`
 
-# differnce between async and asyncy pipe
+# Differnce between async and asyncy pipe
 
 Let's imagine we have user data that we want to pass from `AppComponent` to `UsersComponent` with async pipe it looks like this
 
