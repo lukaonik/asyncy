@@ -5,7 +5,7 @@ import { Observable, Subscribable } from 'rxjs';
 
 @Pipe({
   name: 'asyncy',
-  pure: true,
+  pure: false,
   standalone: true,
 })
 export class AsyncyPipe implements PipeTransform, OnDestroy {
