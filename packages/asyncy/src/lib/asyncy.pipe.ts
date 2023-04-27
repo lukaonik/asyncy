@@ -11,11 +11,11 @@ import { Observable, Subscribable } from 'rxjs';
 export class AsyncyPipe implements PipeTransform, OnDestroy {
   asyncPipe = new AsyncPipe(inject(ChangeDetectorRef));
 
-  transform<T>(obj: Observable<T> | Subscribable<T> | Promise<T>): T | null;
+  transform<T>(obj: Observable<T> | Subscribable<T> | Promise<T>): T;
   transform<T>(obj: null | undefined): null;
   transform<T>(
     obj: Observable<T> | Subscribable<T> | Promise<T> | null | undefined
-  ): T | null;
+  ): T;
   transform<T>(
     obj: Observable<T> | Subscribable<T> | Promise<T> | null | undefined
   ): T {
