@@ -1,1 +1,1 @@
-export * from './lib/asyncy/asyncy.component';
+export * from './lib/asyncy.pipe';
