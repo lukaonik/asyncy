@@ -8,7 +8,7 @@ Are you tired of null checks with `async` pipe ? use `asyncy`
 
 # Installation
 
-`npm install @tony-builder/asyncy --save`
+`npm install @tony-builder/asyncy --save` (npm [link](https://www.npmjs.com/package/@tony-builder/asyncy))
 
 # Getting started
 
